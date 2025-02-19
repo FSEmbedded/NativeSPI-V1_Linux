@@ -10,9 +10,13 @@ You can either implement NspiPortV1.cs as a class into your existing project, or
 If you have an existing WinForms application that is using NativeSPI-V1.dll for Windows, you can run this application under Linux using [Mono](https://www.mono-project.com/). Keep in mind, that Mono only supports .NET up to Framework 4.7! Replace the windows specific NativeSPI-V1.dll with the file provided here.
 You can also build it yourself:
 
-'''
+```
 csc.exe /target:library /out:NativeSPI-V1.dll /reference:System.dll .\NspiPortV1.cs
-'''
+```
 
 When using Mono, you also need need a [special library](https://github.com/FSEmbedded/dotnet_linux_IO_API) provided by F&S.
 Also have a look at [NativeI2C for Linux](https://github.com/FSEmbedded/NativeI2C_Linux) and this [demo application](https://github.com/FSEmbedded/WinForms_On_Linux_InterfaceDemo).
+
+# DISCLAIMER
+We tested this software on our boards with some test applications. However, this code may contain errors and is not production ready yet!
+SEE IT AS A PROOF OF CONCEPT AND USE AT YOUR OWN RISK.
