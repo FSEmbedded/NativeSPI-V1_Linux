@@ -329,7 +329,7 @@ namespace FS.NetDCU
          *** Function: int HandleError(int success, string errorfunction)  ***
          ***                                                               ***
          *** Parameters: success:       Return value of API function:      ***
-         ***                            0: Failure, !=0: Success           ***
+         ***                            0: Success, !=0: Failure           ***
          ***             errorfunction: Name of function that failed       ***
          ***                                                               ***
          *** Return:     0: Success                                        ***
